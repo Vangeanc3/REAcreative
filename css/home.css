@@ -1,0 +1,14 @@
+.home{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.home-slider{
+    border: solid 1px black;
+    border-radius: 1.2rem;
+    width: 100rem;
+    height: 45rem;
+}
