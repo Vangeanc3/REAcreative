@@ -29,6 +29,8 @@
     font-size: 1.6rem;
     text-align: center;
     color: #fff;
+    border: none;
+    cursor: pointer;
 }
 
 .menu-logo-container{
@@ -53,3 +55,4 @@
     margin-left: 1rem;
     font-size: 2rem;
 }
+

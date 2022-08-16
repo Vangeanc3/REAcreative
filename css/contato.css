@@ -1,0 +1,172 @@
+.modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: whitesmoke;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.l-main{
+    background: white;
+    border-radius: 6px;
+    height: 432px;
+    width: 768px;
+    padding: 60px;
+    position: relative;
+    display: flex;
+    margin: 50px auto 50px auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15), 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.c-button{
+    background: blue;
+    border-radius: 30px;
+    color: white;
+    display: inline-block;
+    max-width: 210px;
+    padding: 9px 15px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 90ms ease-in;
+}
+
+.c-button:hover{
+        background-color: #00ffff;
+        transition: all 90ms ease-out;
+}
+
+.c-button:active{
+    transform: translateY(1.5px);
+}
+
+.c-card{
+    border-radius: 6px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 0.6;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 30px 60px;
+    transition: all 385ms ease-in;
+}
+
+.is-active{
+    clip-path: circle(100%);
+    transition-delay: 0s;
+    z-index: 1;
+}
+
+:not(.is-active){
+    transition-delay: 205ms;
+}
+
+.c-card--index{
+    background-color: #fcfcfc;
+    color: #363636;
+}
+
+.c-card--instagram{
+    background: #e4405f;
+    clip-path: circle(0% at 600px 90%);
+}
+
+.c-card--instagram .c-button{
+    background: #4f5bd5;
+}
+
+.c-card--instagram .c-button:hover{
+    background-color: lighten(#4f5bd5, 5%);
+}
+
+.c-card--twitter{
+    background: #00aced;
+    clip-path: circle(0% at 725px 90%);
+}
+
+.c-card--twitter  .c-button{
+    background-color: #fcfcfc;
+    color: black;
+}
+
+.c-card--twitter .c-button:hover{
+    background-color: darken(#fcfcfc, 10%);
+}
+
+.c-card__title{
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+}
+
+.c-card__title-emphasis{
+    display: inline-block;
+    flex: 1;
+    font-size: 210%;
+    font-weight: bold;
+    width: 100%;
+}
+
+.c-card__explanation{
+    line-height: 1.6;
+    margin: 30px 0;
+}
+
+.c-menu{
+    align-items: flex-end;
+    bottom: 0;
+    display: flex;
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 30px 30px 0;
+    position: absolute;
+    right: 0;
+}
+
+.c-menu__item{
+    z-index: 200;
+    margin-left: 15px;
+}
+
+.c-menu__item--index{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+.c-menu__toggle{
+    background: transparent;
+    border: 0;
+    bottom: 30px;
+    cursor: pointer;
+    right: 30px;
+    padding: 0;
+    height: 30px;
+    width: 48px;
+    transition: all 150ms ease-in-out;
+}
+
+.c-menu__toggle:active{
+    transform: translateY(1.5px);
+}
+
+.c-menu__toggle .is-active{
+    fill: white;
+    pointer-events: none;
+}
+
+.c-menu__toggle > * {
+    pointer-events: none;
+}
+
+.c-menu__toggle svg{
+    width: 21px;
+}
