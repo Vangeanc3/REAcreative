@@ -11,8 +11,30 @@ html{
 
 a{
     text-decoration: none;
+    color: white;
 }
 
 ul{
     list-style-type: none;
+}
+
+.titulo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.titulo h2{
+    font-size: 4rem;
+    margin-top: 1rem;
+}
+
+.titulo .linha{
+    margin-top: .5rem;
+    width: 20rem;
+    height: .4rem;
+    background: black;
 }

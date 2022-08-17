@@ -1,10 +1,10 @@
 .sobre{
-    height: 150vh;
+    height: 155vh;
     width: 100%;
     background-color: whitesmoke;
 }
 
-.sobre-container-titulo{
+.titulo{
     display: flex;
     text-align: center;
     justify-content: center;
@@ -13,12 +13,12 @@
     width: 100%;
 }
 
-.sobre-container-titulo h2{
+.titulo h2{
     font-size: 4rem;
     margin-top: 1rem;
 }
 
-.sobre-container-titulo .linha{
+.titulo .linha{
     margin-top: .5rem;
     width: 20rem;
     height: .4rem;

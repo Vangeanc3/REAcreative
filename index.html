@@ -11,26 +11,28 @@
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/projeto.css">
     <link rel="stylesheet" href="css/contato.css">
-    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+
+    <script src="https://kit.fontawesome.com/1d20bd8d20.js" crossorigin="anonymous" defer></script>
     <script src="main.js" defer></script>
-    <script src="node_modules/@glidejs/glide/dist/glide.min.js" defer></script>
+
 </head>
 
 <body>
     <header>
         <nav class="menu">
-            <div class="menu-logo-container">
+            <a class="menu-logo-container" href="">
                 <div class="menu-logo-img">
                     <img src="http://3.bp.blogspot.com/-Cmat-vetCQI/Tgy5KmJaAHI/AAAAAAAAAJU/YDoOI2AFChc/s320/732rec.JPG"
                         alt="">
                 </div>
                 <h2 class="menu-logo">REAcreative</h2>
-            </div>
+            </a>
             <ul class="menu-links">
-                <li>Inicio</li>
-                <li>Sobre</li>
-                <li>Projeto</li>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projeto">Projeto</a></li>
             </ul>
             <button href="#" class="menu-aluno-area">Contato</button>
         </nav>
@@ -134,7 +136,7 @@
         </div>
     </header>
     <main>
-        <section class="home">
+        <section class="home" id="home">
             <div class="home-slider">
                 <ul class="home-slides">
                     <li>
@@ -150,8 +152,9 @@
             </div>
             <a class="home-btn">Ver mais</a>
         </section>
-        <section class="sobre">
-            <div class="sobre-container-titulo">
+        <!----------  FIM HOME ----------->
+        <section class="sobre" id="sobre">
+            <div class="titulo">
                 <h2>Sobre</h2>
                 <div class="linha"></div>
             </div>
@@ -186,6 +189,91 @@
                 </div>
             </div>
         </section>
+        <!----------  FIM SOBRE ----------->
+        <section class="projeto" id="projeto">
+            <div class="titulo">
+                <h2>Projeto</h2>
+                <div class="linha"></div>
+            </div>
+            <div class="conhecimentos">
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fa-brands fa-html5"></i>
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ex eius voluptatem
+                            deleniti alias commodi doloremque aspernatur id adipisci quia ea, distinctio maxime, at
+                            nemo. Officiis suscipit excepturi quia aut?
+                        </p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>Css</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ex eius voluptatem
+                            deleniti alias commodi doloremque aspernatur id adipisci quia ea, distinctio maxime, at
+                            nemo. Officiis suscipit excepturi quia aut?
+                        </p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fas fa-pencil-alt"></i>
+                        <h3>Desing</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ex eius voluptatem
+                            deleniti alias commodi doloremque aspernatur id adipisci quia ea, distinctio maxime, at
+                            nemo. Officiis suscipit excepturi quia aut?
+                        </p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-js"></i>
+                        <h3>Java-script</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ex eius voluptatem
+                            deleniti alias commodi doloremque aspernatur id adipisci quia ea, distinctio maxime, at
+                            nemo. Officiis suscipit excepturi quia aut?
+                        </p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-bootstrap"></i>
+                        <h3>Boostrap</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ex eius voluptatem
+                            deleniti alias commodi doloremque aspernatur id adipisci quia ea, distinctio maxime, at
+                            nemo. Officiis suscipit excepturi quia aut?
+                        </p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fa-brands fa-github"></i>
+                        <h3>Git e Git Hub</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ex eius voluptatem
+                            deleniti alias commodi doloremque aspernatur id adipisci quia ea, distinctio maxime, at
+                            nemo. Officiis suscipit excepturi quia aut?
+                        </p>
+                    </div>
+                </div>
+                <div class="conhecimentos-img">
+                    <img src="imgs/eetepa.jpg">
+                </div>
+            </div>
+        </section>
+        <!----------  FIM PROJETOS ----------->
     </main>
 </body>
 
