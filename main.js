@@ -19,6 +19,16 @@ setInterval(carrosel, 4000);
 
 // Contatos Modal
 
+const btnMenu = document.querySelector(".menu-aluno-area")
+const modal = document.querySelector(".modal")
+const navMenu = document.querySelector(".menu")
+btnMenu.addEventListener("click", () => {
+  modal.classList.toggle("modal-toggle")
+  navMenu.classList.toggle("menu-toggle")
+
+})
+
+
 const $cards = document.querySelectorAll(".js-card");
 const $menu = document.querySelector(".js-menu");
 const sectionToggleClass = "js-section-toggle";

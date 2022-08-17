@@ -9,6 +9,11 @@
     color: #fff;
 }
 
+.menu-toggle{
+    position: fixed;
+    z-index: 51;
+}
+
 .menu-links{
     display: flex;
     flex-direction: row;
